@@ -9,7 +9,53 @@
         <link rel="stylesheet" href="/styles/style.css" />
         <title>BMI Calculator</title>
     </head>
-    <body>
-        <h1>Hello testing</h1>
+    <body class="bg-[#FBE7C6]">
+        <div class="main-area w-full h-56 mx-auto relative">
+            <div
+                class="form-area bg-[#B4F8C8] w-[50%] h-[50vh] absolute top-60 left-[25%]"
+            >
+                <div
+                    class="input-group relative top-[25%] left-[10%] w-[100%] p-5"
+                >
+                    <h1 class="text-slate-700 uppercase font-bold py-2">
+                        BMI Calculator
+                    </h1>
+                    <div class="input-weight mb-4">
+                        <input
+                            type="text"
+                            class="w-[70%] py-2 px-2 rounded-md"
+                            placeholder="Weight"
+                        />
+                    </div>
+                    <div class="input-height flex items-center">
+                        <input
+                            type="text"
+                            class="w-[35%] mr-1 py-2 px-2 rounded-md"
+                            placeholder="Height in Feet"
+                        />
+                        <input
+                            type="text"
+                            class="w-[35%] py-2 px-2 rounded-md"
+                            placeholder="Height in inch"
+                        />
+                    </div>
+                    <div class="btn-area py-4">
+                        <button
+                            type="submit"
+                            class="bg-[#FFAEBC] w-[70%] px-2 py-2 rounded-md text-white font-bold hover:bg-[#EF7C8E]"
+                        >
+                            See the Results
+                        </button>
+                    </div>
+                    <!-- result area -->
+                    <div id="resultArea" class="result-area py-6 hidden">
+                        <p class="font-bold text-3xl">40</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
+
+    <!-- scipt -->
+    <script src="scripts/app.js"></script>
 </html>
