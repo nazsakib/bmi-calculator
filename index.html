@@ -22,6 +22,7 @@
                     </h1>
                     <div class="input-weight mb-4">
                         <input
+                            id="inputWeight"
                             type="text"
                             class="w-[70%] py-2 px-2 rounded-md"
                             placeholder="Weight"
@@ -29,11 +30,13 @@
                     </div>
                     <div class="input-height flex items-center">
                         <input
+                            id="inputHeightFeet"
                             type="text"
                             class="w-[35%] mr-1 py-2 px-2 rounded-md"
                             placeholder="Height in Feet"
                         />
                         <input
+                            id="inputHeightInch"
                             type="text"
                             class="w-[35%] py-2 px-2 rounded-md"
                             placeholder="Height in inch"
@@ -48,8 +51,8 @@
                         </button>
                     </div>
                     <!-- result area -->
-                    <div class="result-area py-6 hidden">
-                        <p class="font-bold text-3xl">40</p>
+                    <div id="bmiScore" class="result-area py-6">
+                        <p class="text-4xl text-pink-500 px-2"></p>
                     </div>
                 </div>
             </div>
